@@ -1,9 +1,22 @@
 import React, { useState } from 'react'
 import { RadioButton } from '../types'
 import RadioButtonGroup from '../components/ui/RadioButtonGroup'
-import { isEmpty, isNil } from 'ramda'
+import { isEmpty } from 'ramda'
 
+/**
+ * The `useRadioButtons` function is a custom hook in TypeScript React that manages a group of radio
+ * buttons and provides the selected option and a UI component for rendering the radio buttons.
+ * @param  - The `options` parameter is an array of `RadioButton` objects. Each `RadioButton` object
+ * has two properties: `label` (string) and `isSelected` (boolean).
+ */
 const useRadioButtons = ({ options }: { options: RadioButton[] }) => {
+  /**
+   * The function `getInitialOptions` takes an array of radio button options and returns a new array
+   * with the same labels, but with the first option selected by default.
+   * @param {RadioButton[]} options - An array of RadioButton objects.
+   * @returns The function `getInitialOptions` returns an array of objects with properties `label` and
+   * `isSelected`.
+   */
   const getInitialOptions = (options: RadioButton[]) => {
     if (isEmpty(options)) {
       return []

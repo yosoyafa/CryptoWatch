@@ -12,6 +12,9 @@ type CoinProps = {
   onPress?: () => void
 }
 
+/* The code defines a functional component called `Coin` that takes in several props: `symbol`, `name`,
+`price`, `percentChange`, `borderColor`, and `onPress`. It returns a JSX element that represents a
+coin card. */
 const Coin = ({
   symbol,
   name,

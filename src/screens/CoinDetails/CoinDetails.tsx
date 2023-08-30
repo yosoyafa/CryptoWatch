@@ -6,6 +6,14 @@ import styles from './styles'
 import { Coin, InfoLabel } from '../../components'
 import Ionicons from 'react-native-vector-icons/Ionicons'
 
+/**
+ * The `CoinDetails` function is a React component that displays details about a specific
+ * cryptocurrency.
+ * @param {CoinDetailsScreenProps}  - - `navigation`: This is the navigation object provided by React
+ * Navigation. It allows you to navigate between screens in your app.
+ * @returns The CoinDetails component is returning a JSX element, which is a ScrollView component
+ * containing various child components such as View, Text, and Coin.
+ */
 const CoinDetails = ({
   navigation,
   route,

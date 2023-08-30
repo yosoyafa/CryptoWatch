@@ -17,6 +17,8 @@ import {
   SearchBar,
 } from '../../components/ui'
 
+/* The `Home` component is a functional component in TypeScript with React. It is the main screen of
+the application and displays a list of cryptocurrencies. */
 const Home = ({ navigation }: HomeScreenProps): JSX.Element => {
   const {
     coins,
@@ -46,11 +48,11 @@ const Home = ({ navigation }: HomeScreenProps): JSX.Element => {
 
   const filteredCoins = !isEmpty(searchTerm)
     ? coins.filter(
-        ({ name, symbol, nameid }) =>
-          name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-          symbol.toLowerCase().includes(searchTerm.toLowerCase()) ||
-          nameid.toLowerCase().includes(searchTerm.toLowerCase())
-      )
+      ({ name, symbol, nameid }) =>
+        name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        symbol.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        nameid.toLowerCase().includes(searchTerm.toLowerCase())
+    )
     : coins
 
   const { selectedLabel, RadioButtonGroup } = useRadioButtons({
@@ -119,8 +121,8 @@ const Home = ({ navigation }: HomeScreenProps): JSX.Element => {
               selectedLabel === '1 hour'
                 ? percent_change_1h
                 : selectedLabel === '24 hours'
-                ? percent_change_24h
-                : percent_change_7d
+                  ? percent_change_24h
+                  : percent_change_7d
 
             const colors = ['#643367', '#AF4B6E', '#E77665']
 

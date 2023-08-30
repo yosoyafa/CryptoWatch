@@ -19,6 +19,12 @@ interface SearchBarProps extends TextInputProps {
   inputStyle?: StyleProp<TextStyle>
 }
 
+/**
+ * The above code defines a SearchBar component in TypeScript React that renders a search icon and an
+ * input field with placeholder text and allows the user to enter and search for text.
+ * @param {SearchBarProps}  - - `value`: The current value of the search bar input.
+ * @returns The SearchBar component is being returned as a JSX element.
+ */
 const SearchBar = ({
   value,
   onChangeText,

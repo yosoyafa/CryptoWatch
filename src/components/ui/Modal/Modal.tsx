@@ -10,6 +10,12 @@ interface ModalProps {
   onClose: () => void
 }
 
+/**
+ * The `Modal` component is a TypeScript React component that renders a modal with a title and
+ * children, and can be shown or hidden based on the `isVisible` prop.
+ * @param {ModalProps}  - - `children`: The content to be displayed inside the modal.
+ * @returns The Modal component is being returned.
+ */
 const Modal = ({
   children,
   title,
