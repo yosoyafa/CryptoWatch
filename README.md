@@ -17,6 +17,10 @@ On the Home screen, the percentual change timespan can be changed by tapping on 
 ## Video recording
 
 
+https://github.com/yosoyafa/CryptoWatch/assets/19701443/3870ebd1-b5bb-4f2f-b193-bd95fad64ef7
+
+
+
 ## Technologies
 - React Native
 - React Navigation
